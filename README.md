@@ -1,50 +1,35 @@
-### For more info:
-http://www.mycertnotes.com/az/valyuta-alqi-satqisindan-qazanc-elde-etmek-bellman-ford-alqoritmi/
+# LE PROBLÈME D'ARBITRAGE:
 
 ***
 
-
-
-This task is given in a book _“Introduction to Algorithms”_ (MIT Press), 3rd edition, page 679:
 
 > ### 24-3   Arbitrage
-> Arbitrage is the use of discrepancies in currency exchange rates to transform one unit of a currency into more than one unit of the same currency. For example, suppose that `1` U.S. dollar buys `49` Indian rupees, `1` Indian rupee buys `2` Japanese yen, and `1` Japanese yen buys `0.0107` U.S. dollars. Then, by converting currencies, a trader can start with `1` U.S. dollar and buy `49 x 2 x 0.0107 = 1.0486` U.S. dollars, thus turning a proﬁt of `4.86` percent.
+> L'arbitrage consiste à utiliser les écarts de taux de change pour transformer une unité d'une devise en plusieurs unités de la même devise. Par exemple, supposons que « 1 » dollar américain achète « 49 » roupies indiennes, « 1 » roupie indienne achète « 2 » yen japonais et « 1 » yen japonais achète « 0,0107 » dollar américain. Ensuite, en convertissant les devises, un trader peut commencer avec « 1 » dollar américain et acheter « 49 x 2 x 0,0107 = 1,0486 » dollars américains, réalisant ainsi un bénéfice de « 4,86 ».
 
-> Suppose that we are given n currencies `c1, c2, ..., cn`  and an `n x n` table `R` of exchange rates, such that one unit of currency `ci`  buys `R[i, j]` units of currency **`cj`**.
+> Supposons qu'on nous donne n devises `c1, c2, ..., cn` et une table `n x n` `R` de taux de change, telle qu'une unité de devise `ci` achète `R[i, j]` unités de devise **`cj`**.
 
-> **a.** Give an efﬁcient algorithm to determine whether or not there exists a sequence of currencies `{ci1, ci2, ..., cik}` such that
+> **a.** Donner un algorithme efﬁcace pour déterminer s'il existe ou non une suite de monnaies `{ci1, ci2, ..., cik}` telle que
 > `R[i1, i2] * R[i2, i3] ... R[ik-1, ik] * R[ik, i1] > 1.`
-> Analyze the running time of your algorithm.
+> Analysez le temps d'exécution de votre algorithme.
 
-> **b.** Give an efﬁcient algorithm to print out such a sequence if one exists. Analyze the running time of your algorithm.
-
+> **b.** Donner un algorithme efﬁcace pour imprimer une telle séquence s'il en existe un. Analysez le temps d'exécution de votre algorithme.
 
 
 ***
 
-### Currency Rates of all Banks
+### Taux de change de toutes les banques
 ![currency-rates-of-banks](http://www.mycertnotes.com/wp-content/uploads/2017/11/currency-rates-of-banks.jpg)
 
 
-
 ***
 
-### Optimal Currency Rates:
-![optimal-rates](http://www.mycertnotes.com/wp-content/uploads/2017/11/optimal-rates.jpg)
-
-
-***
-
-### Currency Graph:
-* Source: “Algorithms (4th Edition)”,  Robert Sedgewick & Kevin Wayne, page 679
+### Graphique des devises :
 ![arbitrage-graph](http://www.mycertnotes.com/wp-content/uploads/2017/11/arbitrage-graph.png)
 
 
 ***
 
 ### Bellman-Ford Algorithm
-* The implementation of "Introduction to Algorithms" book:
-
 ![Bellman-Ford-Algorithm](http://www.mycertnotes.com/wp-content/uploads/2017/11/Bellman-Ford-Algorithm.png)
 
 
@@ -52,7 +37,7 @@ This task is given in a book _“Introduction to Algorithms”_ (MIT Press), 3rd
 ***
 
  
-### Arbitrage Opportunity:                 
+### Arbitrage Occasion:                 
  
 **Arbitrage 1: (profit - 32.99 AZN)**
 * 1000.0000 AZN = 507.6142 EUR (Bank Melli İran)
